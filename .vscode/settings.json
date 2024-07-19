@@ -1,0 +1,11 @@
+{
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "java.project.sourcePaths": [
+        "src/main/java/com/yano/smartshop",
+        "src/main"
+    ],
+    "java.compile.nullAnalysis.mode": "disabled"
+}
