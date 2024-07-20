@@ -1584,12 +1584,13 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .yanofolio-section{
   background-image: url("../public/images/2.jpg");
+  color: white;
   background-blend-mode: overlay;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center;
   background-size: cover;
-  background-color: #dddcdc !important;
+  background-color: #313131 !important;
 }
 
 .img-bg{
@@ -1699,6 +1700,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: 120px;
   width: 120px;
   margin: 10px;
+
+}
+
+.col-img-2{
+  height: 80px;
+  width: 80px;
+  margin: 7px;
 
 }
 

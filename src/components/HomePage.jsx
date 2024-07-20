@@ -69,6 +69,38 @@ const HomePage = () => {
                     <div className="col-md-3">
                         <span className="fa-stack fa-4x">
                             <i className="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i className="fas fa-lightbulb fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 className="my-3">Conseil et Gestion de projet</h4>
+                        <p className="text-muted">Analyse des Besoins | Rédaction de Cahier des Charges | Coordination d'équipes</p>
+                    </div>
+                    <div className="col-md-3">
+                        <span className="fa-stack fa-4x">
+                            <i className="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i className="fas fa-infinity fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 className="my-3">DevOps</h4>
+                        <p className="text-muted">Configuration de pipelines CI/CD | Monitoring et Logging | Scalabilité et Performances</p>
+                    </div>
+                    <div className="col-md-3">
+                        <span className="fa-stack fa-4x">
+                            <i className="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i className="fas fa-cloud fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 className="my-3">Outils et Plateformes Cloud</h4>
+                        <p className="text-muted">AWS | Google Cloud Platform | Microsoft Azure | Heroku</p>
+                    </div>
+                    <div className="col-md-3">
+                        <span className="fa-stack fa-4x">
+                            <i className="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i className="fas fa-newspaper fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 className="my-3">Frameworks et Bibliothèques</h4>
+                        <p className="text-muted">React | Angular | Spring Boot | Django</p>
+                    </div>
+                    <div className="col-md-3">
+                        <span className="fa-stack fa-4x">
+                            <i className="fas fa-circle fa-stack-2x text-primary"></i>
                             <i className="fas fa-tools fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 className="my-3">Maintenance et support</h4>
@@ -230,41 +262,44 @@ const HomePage = () => {
                     <p className='lh-lg'>Ce portfolio a été conçu et déployé avec les technologies suivantes :</p>
                     
                     <div className="img-display justify-content-center">
-                        <div className="col-img img-fluid">
+                        <div className="col-img-2 img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/HTML5.png" alt=""/>
                         </div>
-                        <div className="col-img img-fluid">
+                        <div className="col-img-2 img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/css.png" alt=""/>
                         </div>
-                        <div className="col-img img-fluid">
+                        <div className="col-img-2 img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/javascript.png" alt=""/>
                         </div>
-                        <div className="col-img img-fluid">
+                        <div className="col-img-2 img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/spring.png" alt=""/>
                         </div>
-                        <div className="col-img img-fluid">
+                        <div className="col-img-2 img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/bootstrap.png" alt=""/>
                         </div>
-                        <div className="col-img img-fluid">
+                        <div className="col-img-2 img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/java.png" alt=""/>
                         </div>
-                        <div className="col-img img-fluid">
+                        <div className="col-img-2 img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/react.png" alt=""/>
                         </div>
-                        <div className="col-img img-fluid">
+                        <div className="col-img-2 img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/mysql.png" alt=""/>
                         </div>
-                        <div className="col-img img-fluid">
+                        <div className="col-img-2 img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/node.png" alt=""/>
                         </div>
-                        <div className="col-img img-fluid mb-3">
+                        <div className="col-img-2 img-fluid mb-3">
                             <img className='img-thumbnail img-bg' src="./images/logo/git.png" alt="" />
                         </div>
-                        <div className="col-img img-fluid mb-3">
+                        <div className="col-img-2 img-fluid mb-3">
                             <img className='img-thumbnail img-bg' src="./images/logo/github.png" alt="" />
                         </div>
-                        <div className="col-img img-fluid mb-3">
+                        <div className="col-img-2 img-fluid mb-3">
                             <img className='img-thumbnail img-bg' src="./images/logo/heroku.png" alt="" />
+                        </div>
+                        <div className="col-img-2 img-fluid mb-3">
+                            <img className='img-thumbnail img-bg' src="./images/logo/maven.png" alt="" />
                         </div>
                     </div>
                 </div>    
