@@ -227,11 +227,11 @@ const HomePage = () => {
             <div className='container'>            
                 <div className="container text-center">
                     <h2 className="section-heading text-uppercase">YANOFOLIO</h2>
-                    <p className='lh-lg'>Ce portfolio a été conçu avec les technologies suivantes :</p>
+                    <p className='lh-lg'>Ce portfolio a été conçu et déployé avec les technologies suivantes :</p>
                     
                     <div className="img-display justify-content-center">
                         <div className="col-img img-fluid">
-                            <img className='img-thumbnail img-bg-2' src="./images/logo/html5.png" alt=""/>
+                            <img className='img-thumbnail img-bg-2' src="./images/logo/HTML5.png" alt=""/>
                         </div>
                         <div className="col-img img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/css.png" alt=""/>
@@ -256,6 +256,15 @@ const HomePage = () => {
                         </div>
                         <div className="col-img img-fluid">
                             <img className='img-thumbnail img-bg-2' src="./images/logo/node.png" alt=""/>
+                        </div>
+                        <div className="col-img img-fluid mb-3">
+                            <img className='img-thumbnail img-bg' src="./images/logo/git.png" alt="" />
+                        </div>
+                        <div className="col-img img-fluid mb-3">
+                            <img className='img-thumbnail img-bg' src="./images/logo/github.png" alt="" />
+                        </div>
+                        <div className="col-img img-fluid mb-3">
+                            <img className='img-thumbnail img-bg' src="./images/logo/heroku.png" alt="" />
                         </div>
                     </div>
                 </div>    
