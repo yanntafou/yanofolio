@@ -165,7 +165,7 @@ const HomePage = () => {
                 
                     <div className="img-display py-2 ">
                         <div className="col-img img-fluid mb-3">
-                            <img className='img-thumbnail img-bg' src="./images/logo/html5.png" alt="" />
+                            <img className='img-thumbnail img-bg' src="./images/logo/HTML5.png" alt="" />
                         </div>
                         <div className="col-img img-fluid mb-3">
                             <img className='img-thumbnail img-bg' src="./images/logo/css.png" alt="" />
@@ -189,7 +189,7 @@ const HomePage = () => {
                             <img className='img-thumbnail img-bg' src="./images/logo/react.png" alt="" />
                         </div>
                         <div className="col-img img-fluid mb-3">
-                            <img className='img-thumbnail img-bg' src="./images/logo/Angular.png" alt="" />
+                            <img className='img-thumbnail img-bg' src="./images/logo/angular.png" alt="" />
                         </div>
                         <div className="col-img img-fluid mb-3">
                             <img className='img-thumbnail img-bg' src="./images/logo/node.png" alt="" />
