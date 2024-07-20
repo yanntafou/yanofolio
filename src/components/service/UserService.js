@@ -3,7 +3,7 @@ import axios from "axios";
 
 class UserService{
 
-    static BASE_URL = "http://localhost:8080"
+    static BASE_URL = "https://yanofolio-4ac1bcc8f3d6.herokuapp.com/"
 
     static async login(email, password){
         try{
