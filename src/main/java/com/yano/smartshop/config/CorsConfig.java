@@ -14,9 +14,9 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedHeaders(*)
+                        .allowedHeaders("*")
                         .allowdCredentials(true)
-                        .allowedMethods("GET", "POST", "PUT", "DELETE")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE","OPTIONS")
                         .allowedOrigins("https://yanofolio-4ac1bcc8f3d6.herokuapp.com");
                     
             }
