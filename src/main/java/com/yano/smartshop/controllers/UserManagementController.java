@@ -22,12 +22,12 @@ public class UserManagementController {
     @Autowired
     private UsersManagementService usersManagementService;
 
-    @PostMapping("auth/register")
+    @PostMapping("/auth/register")
     public ResponseEntity<ReqRes> register(@RequestBody ReqRes reg) {
         return ResponseEntity.ok(usersManagementService.register(reg));
     }
 
-    @PostMapping("auth/login")
+    @PostMapping("/auth/login")
     public ResponseEntity<ReqRes> login(@RequestBody ReqRes req) {
         return ResponseEntity.ok(usersManagementService.login(req));
     }
