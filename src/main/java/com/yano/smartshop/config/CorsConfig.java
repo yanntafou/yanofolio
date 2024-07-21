@@ -13,9 +13,11 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("https://yanofolio-4ac1bcc8f3d6.herokuapp.com/**")
+                registry.addMapping("/**")
+                        .allowedHeaders(*)
+                        .allowdCredentials(true)
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
-                        .allowedOrigins("*");
+                        .allowedOrigins("https://yanofolio-4ac1bcc8f3d6.herokuapp.com");
                     
             }
         };
