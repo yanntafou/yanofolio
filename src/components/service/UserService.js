@@ -2,16 +2,17 @@ import axios from "axios";
 
 
 class UserService{
-
-    static BASE_URL = "https://yanofolio-4ac1bcc8f3d6.herokuapp.com"
+    
+    static BASE_URL = "t3hr5b.stackhero-network.com:9118"
 
     static async login(email, password){
         try{
             const response = await axios.post(`${UserService.BASE_URL}/auth/login`, {email, password})
             return response.data;
-            console(response.data)
+            console.log(response.data)
 
         }catch(err){
+            console.error("Login error:", err);
             throw err;
         }
     }
