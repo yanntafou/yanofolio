@@ -19,11 +19,12 @@ import com.yano.smartshop.services.UsersManagementService;
 
 @RestController
 public class UserManagementController {
-    @CrossOrigin(origins = "https://yanofolio-4ac1bcc8f3d6.herokuapp.com")
+    
     
     @Autowired
     private UsersManagementService usersManagementService;
-
+    
+    @CrossOrigin(origins = "https://yanofolio-4ac1bcc8f3d6.herokuapp.com")
     @PostMapping("/auth/register")
     public ResponseEntity<ReqRes> register(@RequestBody ReqRes reg) {
         return ResponseEntity.ok(usersManagementService.register(reg));
