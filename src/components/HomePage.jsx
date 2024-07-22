@@ -191,7 +191,9 @@ const HomePage = () => {
                     <div className=''>
                         <h5 className='pres-text'>Je m'appelle Yann Tafou. Développeur full stack axé sur les résultats 
                         avec 5 ans d'expérience dans la création des sites et applications web, Intégration et deploiement continues. 
-                        Capable de concevoir et de développer des applications pour répondre aux besoins des clients ou à un problème informatique spécifique.
+                        <br/>
+                        <br/>Capable de concevoir et de développer des applications pour répondre aux besoins des clients ou à un problème informatique spécifique.
+                        <br/>
                         <br/>J'ai des compétences en front-end, back-end et DevOps. 
                         Bonne maîtrise des technologies modernes.
                         </h5>
