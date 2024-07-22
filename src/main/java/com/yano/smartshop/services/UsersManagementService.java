@@ -1,4 +1,3 @@
-
 package com.yano.smartshop.services;
 
 import java.util.HashMap;
@@ -16,7 +15,6 @@ import com.yano.smartshop.dto.ReqRes;
 import com.yano.smartshop.models.AppUser;
 import com.yano.smartshop.repository.AppUserRepository;
 
-
 @Service
 public class UsersManagementService {
 
@@ -32,8 +30,7 @@ public class UsersManagementService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-
-    public ReqRes register(ReqRes registrationRequest){
+    public ReqRes register(ReqRes registrationRequest) {
         ReqRes resp = new ReqRes();
 
         try {
@@ -43,25 +40,24 @@ public class UsersManagementService {
             appUser.setEmail(registrationRequest.getEmail());
             appUser.setPhone(registrationRequest.getPhone());
             appUser.setAddresse(registrationRequest.getAddresse());
-            appUser.setRole(registrationRequest.getRole());           
+            appUser.setRole(registrationRequest.getRole());
             appUser.setPassword(passwordEncoder.encode(registrationRequest.getPassword()));
 
             AppUser appUsersResult = appUserRepository.save(appUser);
-            if (appUsersResult.getId()>0) {
+            if (appUsersResult.getId() > 0) {
                 resp.setAppUser((appUsersResult));
                 resp.setMessage("User Saved Successfully");
                 resp.setStatusCode(200);
             }
 
-        }catch (Exception e){
+        } catch (Exception e) {
             resp.setStatusCode(500);
             resp.setError(e.getMessage());
         }
         return resp;
     }
 
-
-    public ReqRes login(ReqRes loginRequest){
+    public ReqRes login(ReqRes loginRequest) {
         ReqRes response = new ReqRes();
         try {
             authenticationManager
@@ -77,17 +73,16 @@ public class UsersManagementService {
             response.setExpirationTime("24Hrs");
             response.setMessage("Successfully Logged In");
 
-        }catch (AuthenticationException e){
+        } catch (AuthenticationException e) {
             response.setStatusCode(500);
             response.setMessage(e.getMessage());
         }
         return response;
     }
 
-
-    public ReqRes refreshToken(ReqRes refreshTokenRequest){
+    public ReqRes refreshToken(ReqRes refreshTokenRequest) {
         ReqRes response = new ReqRes();
-        try{
+        try {
             String ourEmail = jwtUtils.extractUserName(refreshTokenRequest.getToken());
             AppUser users = appUserRepository.findByEmail(ourEmail).orElseThrow();
             if (jwtUtils.isTokenValid(refreshTokenRequest.getToken(), users)) {
@@ -101,13 +96,12 @@ public class UsersManagementService {
             response.setStatusCode(200);
             return response;
 
-        }catch (Exception e){
+        } catch (Exception e) {
             response.setStatusCode(500);
             response.setMessage(e.getMessage());
             return response;
         }
     }
-
 
     public ReqRes getAllUsers() {
         ReqRes reqRes = new ReqRes();
@@ -130,7 +124,6 @@ public class UsersManagementService {
         }
     }
 
-
     public ReqRes getUsersById(Integer id) {
         ReqRes reqRes = new ReqRes();
         try {
@@ -144,7 +137,6 @@ public class UsersManagementService {
         }
         return reqRes;
     }
-
 
     public ReqRes deleteUser(Integer userId) {
         ReqRes reqRes = new ReqRes();
@@ -177,13 +169,12 @@ public class UsersManagementService {
                 existingUser.setPhone(updatedUser.getPhone());
                 existingUser.setAddresse(updatedUser.getAddresse());
                 existingUser.setRole(updatedUser.getRole());
+                existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
 
                 // Check if password is present in the request
-                if (updatedUser.getPassword() != null && !updatedUser.getPassword().isEmpty()) {
-                    // Encode the password and update it
-                    existingUser.setPassword(passwordEncoder.encode(updatedUser.getPassword()));
-                }
-
+                //if (updatedUser.getPassword() != null && !updatedUser.getPassword().isEmpty()) {
+                // Encode the password and update it
+                //}
                 AppUser savedUser = appUserRepository.save(existingUser);
                 reqRes.setAppUser(savedUser);
                 reqRes.setStatusCode(200);
@@ -199,8 +190,7 @@ public class UsersManagementService {
         return reqRes;
     }
 
-
-    public ReqRes getMyInfo(String email){
+    public ReqRes getMyInfo(String email) {
         ReqRes reqRes = new ReqRes();
         try {
             Optional<AppUser> userOptional = appUserRepository.findByEmail(email);
@@ -213,7 +203,7 @@ public class UsersManagementService {
                 reqRes.setMessage("User not found for update");
             }
 
-        }catch (Exception e){
+        } catch (Exception e) {
             reqRes.setStatusCode(500);
             reqRes.setMessage("Error occurred while getting user info: " + e.getMessage());
         }

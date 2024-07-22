@@ -3,16 +3,14 @@ import axios from "axios";
 
 class UserService{
     
-    static BASE_URL = "https://www.yanofolio.ca"
+    static BASE_URL = "http://127.0.0.1:8080"
 
     static async login(email, password){
         try{
             const response = await axios.post(`${UserService.BASE_URL}/auth/login`, {email, password})
             return response.data;
-            console.log(response.data)
 
         }catch(err){
-            console.error("Login error:", err);
             throw err;
         }
     }

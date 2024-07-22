@@ -1,7 +1,6 @@
 package com.yano.smartshop.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -18,13 +17,12 @@ import com.yano.smartshop.models.AppUser;
 import com.yano.smartshop.services.UsersManagementService;
 
 @RestController
+
 public class UserManagementController {
-    
-    
+
     @Autowired
     private UsersManagementService usersManagementService;
-    
-    @CrossOrigin(origins = "https://yanofolio-4ac1bcc8f3d6.herokuapp.com")
+
     @PostMapping("/auth/register")
     public ResponseEntity<ReqRes> register(@RequestBody ReqRes reg) {
         return ResponseEntity.ok(usersManagementService.register(reg));
