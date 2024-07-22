@@ -187,11 +187,21 @@ const HomePage = () => {
             <div className='container'>   
 
                 <h2 className="section-heading text-uppercase text-center">- PRESENTATION -</h2>
-                <p className='lh-lg text-start'>Je m'appelle Yann Tafou. Jeune développeur full stack axé sur les résultats 
-                    avec 5 ans d'expérience dans la création de sites web et d'applications web. 
-                    Capable de concevoir et de développer des applications pour répondre aux besoins des clients. 
-                    Bonne maîtrise des technologies modernes telles que :
-                </p>
+                <div className='pres-container'>
+                    <div className=''>
+                        <h5 className='pres-text'>Je m'appelle Yann Tafou. Développeur full stack axé sur les résultats 
+                        avec 5 ans d'expérience dans la création des sites et applications web, Intégration et deploiement continues. 
+                        Capable de concevoir et de développer des applications pour répondre aux besoins des clients ou à un problème informatique spécifique.
+                        <br/>J'ai des compétences en front-end, back-end et DevOps. 
+                        Bonne maîtrise des technologies modernes.
+                        </h5>
+                    </div>
+                
+                    <div className=''>
+                        <img className ='img-fluid img-presentation' src="./images/NTYA.jpg" alt="" />
+                    </div>
+                </div>
+                
    
                 <div className='row '>
                 
