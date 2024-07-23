@@ -1,1 +1,1 @@
-web: java -jar target/smartshop-0.0.1-SNAPSHOT.jar
+web: java -jar src/main/SmartshopApplication.jar
