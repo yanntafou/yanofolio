@@ -120,11 +120,11 @@ const HomePage = () => {
                 <div className="row">
                     <div className="col-lg-4 col-sm-6">
                         <div className="portfolio-item">
-                            <a className="portfolio-link" ><Link to="/profile" >
+                            <a className="portfolio-link" ><Link to="/profile" target="_blank" rel="noopener noreferrer" >
                                 <div className="portfolio-hover">
                                     <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img className="img-fluid" src="./images/portfolio/1.jpg" alt="..." />
+                                <img className="img-fluid" src="./images/portfolio/2.jpg" alt="..." />
                             </Link></a>
                             <div className="portfolio-caption">
                                 <div className="portfolio-caption-heading">User Management</div>
@@ -133,48 +133,47 @@ const HomePage = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-sm-6 ">
+                    <div className="col-lg-4 col-sm-6">
                         <div className="portfolio-item">
-                            <a className="portfolio-link" ><Link to="/profile" >
+                            <a className="portfolio-link" ><Link to="https://lecubacois.ca/" target="_blank" rel="noopener noreferrer" >
                                 <div className="portfolio-hover">
                                     <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img className="img-fluid" src="./images/portfolio/2.jpg" alt="..." />
+                                <img className="img-fluid" src="./images/portfolio/10.jpg" alt="..." />
+                            </Link></a>
+                            <div className="portfolio-caption">
+                                <div className="portfolio-caption-heading">Le Cubaquois</div>
+                                <div className="portfolio-caption-subheading text-muted">Site Vitrine</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-sm-6">
+                        <div className="portfolio-item">
+                            <a className="portfolio-link" ><Link to="https://asso-ndolopourtous.com" target="_blank" rel="noopener noreferrer" >
+                                <div className="portfolio-hover">
+                                    <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img className="img-fluid" src="./images/portfolio/11.jpg" alt="..." />
+                            </Link></a>
+                            <div className="portfolio-caption">
+                                <div className="portfolio-caption-heading">Association Ndolo Pour Tous</div>
+                                <div className="portfolio-caption-subheading text-muted">Site Vitrine ONG</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-4 col-sm-6">
+                        <div className="portfolio-item" >
+                            <a className="portfolio-link" ><Link to="" >
+                                <div className="portfolio-hover">
+                                    <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img className="img-fluid" src="./images/portfolio/8.jpeg" alt="..." />
                             </Link></a>
                             <div className="portfolio-caption"> 
-                                <div className="portfolio-caption-heading">Product Management</div>
+                                <div className="portfolio-caption-heading">Gestion Immobilière</div>
                                 <div className="portfolio-caption-subheading text-muted">App Web</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-sm-6">
-                        <div className="portfolio-item">
-                            <a className="portfolio-link" ><Link to="/profile" >
-                                <div className="portfolio-hover">
-                                    <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img className="img-fluid" src="./images/portfolio/6.jpg" alt="..." />
-                            </Link></a>
-                            <div className="portfolio-caption">
-                                
-                                <div className="portfolio-caption-heading">Le Cubaquois</div>
-                                <div className="portfolio-caption-subheading text-muted">Site Vitrine</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-lg-4 col-sm-6">
-                        <div className="portfolio-item">
-                            <a className="portfolio-link" ><Link to="https://lecubacois.ca/" >
-                                <div className="portfolio-hover">
-                                    <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img className="img-fluid" src="./images/portfolio/4.jpg" alt="..." />
-                            </Link></a>
-                            <div className="portfolio-caption">
-                                <div className="portfolio-caption-heading">Le Cubaquois</div>
-                                <div className="portfolio-caption-subheading text-muted">Site Vitrine</div>
                             </div>
                         </div>
                     </div>
@@ -324,7 +323,7 @@ const HomePage = () => {
                     <h2 className="section-heading text-uppercase">Nous contacter</h2>
                     <h3 className="section-subheading ">Nous serons ravi de vous lire.</h3>
                 </div>
-                <form id="contactForm" className='needs-validation' noValidate action="send_email.php" method='POST'>
+                <form id="contactForm" className='needs-validation' noValidate method='POST'>
                     <div className="row align-items-stretch mb-5">
                         <div className="col-md-6">
                             <div className="form-group">
