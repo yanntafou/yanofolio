@@ -1,0 +1,26 @@
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
+import org.springframework.boot.web.server.WebServer;
+import org.springframework.boot.web.server.WebServerFactory;
+import org.springframework.boot.web.server.WebServerFactoryCustomizer;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ServerConfig {
+
+    @Bean
+    public WebServerFactoryCustomizer<TomcatServletWebServerFactory> webServerFactoryCustomizer() {
+        return factory -> factory.addConnectorCustomizers(connector -> {
+            connector.setPort(5015); // Vous pouvez personnaliser le port ici si nécessaire
+        });
+    }
+
+    @Bean
+    public CommandLineRunner commandLineRunner(WebServerFactory webServerFactory) {
+        return args -> {
+            WebServer webServer = webServerFactory.getWebServer();
+            System.out.println("Server running on port: " + webServer.getPort());
+        };
+    }
+}
