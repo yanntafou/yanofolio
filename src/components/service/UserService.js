@@ -3,7 +3,7 @@ import axios from "axios";
 
 class UserService{
     
-    static BASE_URL = `https://www.yanofolio.ca:${PORT}`
+    static BASE_URL = process.env.BASE_URL
 
     static async login(email, password){
         try{
