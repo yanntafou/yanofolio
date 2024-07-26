@@ -3,7 +3,7 @@ import axios from "axios";
 
 class UserService{
     
-    static BASE_URL = process.env.REACT_APP_BASE_URL
+    static BASE_URL = "www.yanofolio.ca"
 
     static async login(email, password){
         try{
