@@ -3,7 +3,7 @@ import axios from "axios";
 
 class UserService{
     
-    static BASE_URL = "postgresql.yanofolio.ca"
+    static BASE_URL = `https://www.yanofolio.ca:${PORT}`
 
     static async login(email, password){
         try{
