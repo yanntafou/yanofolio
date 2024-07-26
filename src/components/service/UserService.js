@@ -3,14 +3,15 @@ import axios from "axios";
 
 class UserService{
     
-    static BASE_URL = process.env.BASE_URL
+    static BASE_URL = process.env.REACT_APP_BASE_URL
 
     static async login(email, password){
         try{
-            const response = await axios.post(`${UserService.BASE_URL}/auth/login`, {email, password})
+            const response = await axios.post(`${UserService.BASE_URL}/auth/login`, {email, password});
             return response.data;
 
         }catch(err){
+            console.error('Erreur lors de la connexion:', err.response ? err.response.data : err.message);
             throw err;
         }
     }
