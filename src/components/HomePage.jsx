@@ -165,7 +165,7 @@ const HomePage = () => {
 
                     <div className="col-lg-4 col-sm-6">
                         <div className="portfolio-item" >
-                            <a className="portfolio-link" ><Link to="" >
+                            <a className="portfolio-link" ><Link to="https://github.com/yanntafou/Gestion_logement" >
                                 <div className="portfolio-hover">
                                     <div className="portfolio-hover-content"><i className="fas fa-plus fa-3x"></i></div>
                                 </div>

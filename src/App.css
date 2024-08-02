@@ -597,7 +597,7 @@ code {
   z-index: 1038;
 }
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav .sb-sidenav {
-  padding-top: 56px;
+  
 }
 .sb-nav-fixed #layoutSidenav #layoutSidenav_nav .sb-sidenav .sb-sidenav-menu {
   overflow-y: auto;
@@ -6591,7 +6591,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     margin-left: -225px;
   }
   .sb-sidenav-toggled #layoutSidenav #layoutSidenav_content:before {
-    display: none;
+    
   }
 }
 @media(max-width: 600px){
